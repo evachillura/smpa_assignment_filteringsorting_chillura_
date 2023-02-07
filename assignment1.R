@@ -29,7 +29,6 @@ housesales %>% # calling on the data set using the pipe operator to organize the
   filter(year == 2015) # using the filter() function to return all of the entries from 2015
 
 
-
 # 2) Similar to the above question, filter results from 2010 onward, so 2010-2015.
 
 
@@ -43,7 +42,6 @@ housesales %>% # calling on the data set using the pipe operator to organize the
 
 housesales %>% # calling on the data set using the pipe operator to organize the code efficiently
   filter(city == "Houston") # using the filter() function to return all entries from the variable Houston
-
 
 
 # 4) Filter for only where the city is Houston as above, and now also filter for only 
@@ -96,7 +94,6 @@ housesales %>% #calling on the data set using the pipe operator to organize the 
   arrange(desc(sales)) # reference line 63
 
 
-
 # 9) Now do the same as Question 8, but this time instead of Dallas, show results for Corpus Christi
 
 
@@ -105,11 +102,9 @@ housesales %>% # calling on the data set using the pipe operator to organize the
   arrange(desc(sales)) # reference line 63
 
 
-
 # 10) Finally, using the Corpus Christi code from Question 9, instead of June
 # use the month of February (2) instead.
 
 housesales %>% # calling on the data set using the pipe operator to organize the code efficiently
   filter(month == 2, city == "Corpus Christi") %>% # changed the month code from line 63 to 2 to represent February
   arrange(desc(sales)) # reference line 63
-
